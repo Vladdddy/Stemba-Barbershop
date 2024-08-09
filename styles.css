@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #000000;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+}
