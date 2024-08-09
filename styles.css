@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
 }
 
-:root {
-    --background: #000000;
+.homepage {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 
-body {
-    background-color: var(--background);
+.sec1 {
+    height: auto;
+    background: hsla(186, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
 }
 
 .navbar {
@@ -25,8 +41,31 @@ body {
     flex-direction: row;
     text-decoration: none;
     color: white;
+    font-weight: 600;
 }
 
-.logo img {
-    width: 40px;
+.image-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 500px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px;
+    background: linear-gradient(150deg, rgb(255, 0, 0) 0%, rgb(30, 99, 133) 50%, rgb(255, 0, 0) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-top: 30px;
+}
+
+.sec2 {
+    height: 100vh;
+    background-color: hsla(186, 100%, 50%, 1);
 }
