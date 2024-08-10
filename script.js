@@ -1,5 +1,6 @@
 window.addEventListener('scroll', function () {
     var ids = ['icon1', 'icon2', 'icon3'];
+    var delay = 100;
 
     function toggleVisibility(elementId) {
         var element = document.getElementById(elementId);
@@ -7,11 +8,15 @@ window.addEventListener('scroll', function () {
             var position = element.getBoundingClientRect();
             console.log('Element:', elementId, 'Position:', position);
             if (position.top < window.innerHeight && position.bottom > 0) {
-                element.classList.add('show');
-                console.log('Element shown:', elementId);
+                setTimeout(function () {
+                    element.classList.add('show');
+                    console.log('Element shown:', elementId);
+                }, delay);
             } else {
-                element.classList.remove('show');
-                console.log('Element hidden:', elementId);
+                setTimeout(function () {
+                    element.classList.remove('show');
+                    console.log('Element hidden:', elementId);
+                }, delay);
             }
         } else {
             console.warn('Element not found:', elementId);
@@ -20,4 +25,5 @@ window.addEventListener('scroll', function () {
 
     ids.forEach(toggleVisibility);
 });
+
 window.dispatchEvent(new Event('scroll'));

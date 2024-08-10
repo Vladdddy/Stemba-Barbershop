@@ -84,20 +84,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border: 2px solid black;
+    border: 1.5px solid #303030;
     border-radius: 30px;
     margin: 50px 30px 20px 30px;
     padding: 10px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    gap: 5px;
+    box-shadow: 8px 8px 10px #0000004d;
 }
 
 .container h1 {
     font-size: 20px;
+    color: #303030;
 }
 
 .container p {
     font-size: 14px;
+    color: rgb(107, 107, 107);
+}
+
+.image-cont {
+    margin-bottom: 5px;
 }
 
 .i {
