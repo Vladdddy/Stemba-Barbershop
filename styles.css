@@ -66,10 +66,9 @@ body {
 }
 
 .hr-custom {
-    height: 2px;
+    height: 1.2px;
     background-color: #ecedef;
-    margin: 20px;
-
+    margin: 20px 30px 20px 30px;
 }
 
 .subtitle {
@@ -143,11 +142,13 @@ body {
 .sec3 a {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
     font-weight: 700;
     text-decoration: none;
+    gap: 5px;
 }
 
 .cont-title-locale {
@@ -170,6 +171,11 @@ body {
     justify-content: center;
     margin: 10px;
     border-radius: 10px;
+}
+
+.icon {
+    width: 20px;
+    margin-left: 10px;
 }
 
 .footer {
@@ -213,4 +219,20 @@ body {
     gap: 5px;
     color: white;
     font-size: 14px;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
