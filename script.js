@@ -1,6 +1,7 @@
 window.addEventListener('scroll', function () {
-    var ids = ['icon1', 'icon2', 'icon3'];
-    var delay = 100;
+    var ids = ['icon1', 'icon2', 'icon3',
+        'imagelocale'];
+    var delay = 150;
 
     function toggleVisibility(elementId) {
         var element = document.getElementById(elementId);
