@@ -34,8 +34,8 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     padding: 20px 10px 0 10px;
 }
 
@@ -47,6 +47,12 @@ body {
     font-weight: 600;
 }
 
+.link-a {
+    border: 1.5px solid #ecedef;
+    border-radius: 15px;
+    padding: 10px;
+}
+
 .image-logo {
     display: flex;
     justify-content: center;
@@ -55,6 +61,13 @@ body {
 
 .logo {
     width: 500px;
+}
+
+.hr-custom {
+    height: 2px;
+    background-color: #ecedef;
+    margin: 20px;
+
 }
 
 .subtitle {
