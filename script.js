@@ -28,3 +28,20 @@ window.addEventListener('scroll', function () {
 });
 
 window.dispatchEvent(new Event('scroll'));
+
+document.addEventListener('DOMContentLoaded', function () {
+    const goUpButton = document.getElementById('goUp');
+    const homeSection = document.getElementById('home');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 20) {
+            goUpButton.style.display = 'block';
+        } else {
+            goUpButton.style.display = 'none';
+        }
+    });
+
+    goUpButton.addEventListener('click', function () {
+        homeSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});

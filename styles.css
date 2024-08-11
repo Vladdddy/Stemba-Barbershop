@@ -7,6 +7,26 @@
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
     background-color: #ecedef;
 }
@@ -26,7 +46,7 @@ body {
 
 .title {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Satisfy", cursive;
     font-weight: 400;
 }
@@ -45,14 +65,16 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .link-a {
     border-bottom: 1.5px solid #ecedef;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
-    box-shadow: 8px 8px 10px #0000004d;
     margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 10px #0000004d;
 }
 
 .image-logo {
@@ -136,7 +158,6 @@ body {
     background: -moz-linear-gradient(270deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
     background: -webkit-linear-gradient(270deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
-
 }
 
 .sec3 a {
@@ -185,31 +206,28 @@ body {
 
 .container-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 10px;
     margin-top: 10px;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
 }
 
 .social {
     width: 20px;
 }
 
-.f-line {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    color: white;
-    font-size: 10px;
-}
-
-.f-line img {
-    width: 10px;
-}
 
 .t-line {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 4px;
 }
 
@@ -221,6 +239,20 @@ body {
     font-size: 14px;
 }
 
+.f-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: white;
+    font-size: 10px;
+    margin-top: 2rem;
+}
+
+.f-line img {
+    width: 10px;
+}
+
 .owner {
     display: flex;
     align-items: center;
@@ -229,10 +261,36 @@ body {
     font-size: 12px;
 }
 
-.description {
+.other {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.other a {
+    text-decoration: none;
+    color: #848484;
+    font-size: 12px;
+}
+
+.go-up {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 8px 8px 10px #0000004d;
+    z-index: 10;
+    padding: 12px;
+    background: hsla(186, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -moz-linear-gradient(9x0deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
+    opacity: 0.7;
+}
+
+.go-up img {
+    width: 25px;
+    height: 22px;
 }
