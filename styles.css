@@ -38,9 +38,9 @@ body {
 .sec1 {
     height: auto;
     background: hsla(186, 100%, 50%, 1);
-    background: linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, 100%);
+    background: -moz-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
 }
 
@@ -89,7 +89,7 @@ body {
 
 .hr-custom {
     height: 1.2px;
-    background-color: #ecedef;
+    background-color: #000000;
     margin: 20px 30px 20px 30px;
 }
 
@@ -154,9 +154,9 @@ body {
 .sec3 {
     height: auto;
     background: hsla(186, 100%, 50%, 1);
-    background: linear-gradient(270deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
-    background: -moz-linear-gradient(270deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
 }
 
@@ -293,4 +293,37 @@ body {
 .go-up img {
     width: 25px;
     height: 22px;
+}
+
+
+
+
+
+
+
+/*!   orari.html - CSS   */
+.sec1-orari,
+.sec2-orari {
+    height: auto;
+    background: hsla(186, 100%, 50%, 1);
+    background: linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, 100%);
+    background: -moz-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(186, 100%, 50%, 1) 0%, hsla(0, 94%, 43%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00E3FD", endColorstr="#D60707", GradientType=1);
+}
+
+.locale-orari {
+    font-size: 20px;
+}
+
+.container-orari {
+    padding: 10px;
+    gap: 5px;
+    background-color: white;
+}
+
+.container-orari p {
+    font-weight: 400;
+    color: #848484;
+    font-size: 18px;
 }
